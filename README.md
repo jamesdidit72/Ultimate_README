@@ -105,6 +105,12 @@
     - Polymorphism
         - Once code has been inherited from another class, you can change, add new etc without effecting the parent class that the data code was taken from
   - keyword for implementing these modules is 'import'
+  - Important for OOP code:
+    - All classes after the parent class require:
+      - from 'previous_file_name' import 'previous_class_name'
+      - def __init__(self):
+      - super().__init__()
+    - Requires an object for the class to be called from
 ### Functions
 - `def` is used to initialise the function
     - example: `def eat():`
@@ -139,6 +145,16 @@
     - API call is what UberEats uses (FOod on its way, food delivered etc)
 ### TDD (Test Driven Development)
   #### use pip to install the packages
+  | Mode |Description|
+  | :----: |:---- |
+  |'r' |This is the default mode. It Opens file for reading. |
+  |'w' |This Mode Opens file for writing. If file does not exist, it creates a new file. If file exists it truncates the file.|
+  |'x' |Creates a new file. If file already exists, the operation fails.|
+  |'a' |Open file in append mode. If file does not exist, it creates a new file.|
+  |'t' |This is the default mode. It opens in text mode.|
+  |'b' |This opens in binary mode.
+  |'r+' |This will open a file for reading and writing (updating)|
+
     - TDD
     - Starts with RED (everything failing)
     - then GREEN to write the code to pass the test
